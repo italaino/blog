@@ -1,21 +1,26 @@
 ---
+import Nav from "../../Components/Nav.astro"
 ---
 
 <html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Notaría Finalteri</title>
-	</head>
-	<body style="background-color: rgb(208, 208, 208">
-		<a href="/">Inicio</a>
-		<a href="/about/">Sobre mi</a>
-        <a href="/blog/">Blog</a>
-	
-        <h1>Mi blog de Astro aprendizaje</h1>
-        <p>Aquí es donde publicaré sobre mi viaje de aprendizaje Astro.</p>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Notaría Finalteri</title>
+  </head>
+  <body style="background-color:rgb(52, 50, 50); color:wheat;">
 
-	</body>
+    <Nav/>
+
+    <h1>Mi blog de Astro aprendizaje</h1>
+    <p>Aquí es donde publicaré sobre mi viaje de aprendizaje Astro.</p>
+
+    <ul>
+      <li><a href="/posts/post-1/">Publicación 1</a></li>
+    </ul>
+  </body>
 </html>
+
+
